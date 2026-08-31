@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button class="btn" id="btn" style="width: 150px; height: 60px; background-color: rgb(66, 255, 37); border: none; position: absolute;
+     top: 200px; left: 400px; color: white;  font-size: xx-large; border-radius: 20px;">Click</button>
+    
+
+    <script>
+        let btn = document.getElementById("btn")
+        btn.onclick= function(){
+            let d = prompt("Hello")
+            let val = d.split("").reverse("").join("")
+
+            if(d==val){
+                alert("Its a Palindrome")
+            }else{
+                alert("Its not a Palindrome")
+            }
+        }
+    </script>
+</body>
+</html>

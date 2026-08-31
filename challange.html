@@ -1,0 +1,69 @@
+<!-- simple calculator for only add,sub,multiply and divide -->
+
+
+<input type="number" name="" id="inputbox1">
+<input type="number" name="" id="inputbox2">
+
+<!-- button for calculation -->
+
+<button id="add-btn">+</button>
+<button id="sub-btn">-</button>
+<button id="multiply-btn">×</button>
+<button id="divide-btn">÷</button>
+
+
+<h1 id="result"></h1>
+
+<script>
+    // selecting all the inputs and btn
+    let inputbox1 = document.getElementById("inputbox1");
+    let inputbox2 = document.getElementById("inputbox2");
+    let result = document.getElementById('result');
+
+    //btns
+    let addbtn = document.getElementById("add-btn");
+    let subbtn = document.getElementById("sub-btn");
+    let multiply = document.getElementById("multiply-btn");
+    let divide = document.getElementById("divide-btn");
+
+    
+    addbtn.addEventListener("click", ()=>{
+
+    let input1value = Number(inputbox1.value);
+    let input2value = Number(inputbox2.value);
+
+     let addresult = input1value+input2value
+     result.textContent=addresult
+
+     
+    });
+
+    subbtn.addEventListener("click", ()=>{
+        
+    let input1value = Number(inputbox1.value);
+    let input2value = Number(inputbox2.value);
+
+     let subresult = input1value-input2value
+     result.textContent=subresult
+        
+    });
+
+    multiply.addEventListener("click" , ()=>{
+        
+    let input1value = Number(inputbox1.value);
+    let input2value = Number(inputbox2.value);
+
+     let multiplyresult = input1value*input2value
+     result.textContent=multiplyresult
+    })
+ 
+    divide.addEventListener("click" ,()=>{
+        
+    let input1value = Number(inputbox1.value);
+    let input2value = Number(inputbox2.value);
+
+     let divide = input1value/input2value
+     result.textContent=divide
+
+    })
+</script>
