@@ -29,6 +29,10 @@
     
     addbtn.addEventListener("click", ()=>{
 
+        if(inputbox1.value=="" && inputbox2.value==""){
+            return alert("Please Enter...")
+        }
+
     let input1value = Number(inputbox1.value);
     let input2value = Number(inputbox2.value);
 
@@ -39,6 +43,10 @@
     });
 
     subbtn.addEventListener("click", ()=>{
+
+         if(inputbox1.value=="" && inputbox2.value==""){
+            return alert("Please Enter...")
+        }
         
     let input1value = Number(inputbox1.value);
     let input2value = Number(inputbox2.value);
@@ -49,6 +57,10 @@
     });
 
     multiply.addEventListener("click" , ()=>{
+
+         if(inputbox1.value=="" && inputbox2.value==""){
+            return alert("Please Enter...")
+        }
         
     let input1value = Number(inputbox1.value);
     let input2value = Number(inputbox2.value);
@@ -58,6 +70,10 @@
     })
  
     divide.addEventListener("click" ,()=>{
+
+         if(inputbox1.value=="" && inputbox2.value==""){
+            return alert("Please Enter...")
+        }
         
     let input1value = Number(inputbox1.value);
     let input2value = Number(inputbox2.value);
