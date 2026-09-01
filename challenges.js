@@ -9,8 +9,8 @@ array.forEach(number => {
 
 console.log(total);
 
-//tasks 3 simple calculator 
 
-let number = [1,2,3,4,5,6,8,9,10];
+
+
 
 

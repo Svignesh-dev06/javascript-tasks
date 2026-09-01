@@ -12,3 +12,4 @@ array.forEach(number => {
 let arr = [3,5,9,7,4,6,8];
 let result = arr.find((num) => num%2==0);
 console.log(result);
+
