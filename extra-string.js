@@ -11,4 +11,12 @@ let split = word.split(" ");
 console.log(split);
 
 //tasks 3
+let wording = "javascript is use to interact with webpages"
 
+let store =  wording.split(" ")
+console.log(store)
+
+for(let i=0;i<store.length;i++){
+
+    
+}
