@@ -31,4 +31,43 @@ let result = num6.find((nums)=>{
         return true
     }
 });
-console.log(result)
+console.log(result);
+
+// Find pairs in array that sum up to a target number
+function findPairs(arr, target) {
+    let pairs = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] + arr[j] === target) {
+                pairs.push([arr[i], arr[j]]);
+            }
+        }
+    }
+    return pairs;
+}
+console.log("Pairs summing to 9:", findPairs([1, 3, 5, 6, 8, 2], 9)); // [[3, 6], [1, 8]]
+
+// Find the second largest number in an array
+function secondLargest(arr) {
+    if (arr.length < 2) return null;
+    let unique = [...new Set(arr)];
+    unique.sort((a, b) => b - a);
+    return unique[1];
+}
+console.log("Second largest:", secondLargest([10, 20, 30, 15, 25])); // 25
+
+// Find all subarrays that sum up to a target number
+function findSubarrays(arr, target) {
+    let subarrays = [];
+    for (let i = 0; i < arr.length; i++) {
+        let sum = 0;
+        for (let j = i; j < arr.length; j++) {
+            sum += arr[j];
+            if (sum === target) {
+                subarrays.push(arr.slice(i, j + 1));
+            }
+        }
+    }
+    return subarrays;
+}
+console.log("Subarrays summing to 12:", findSubarrays([1, 5, 3, 4, 8, 2], 12)); // [[5, 3, 4], [4, 8]]

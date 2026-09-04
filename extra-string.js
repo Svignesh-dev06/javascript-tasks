@@ -2,21 +2,17 @@
 
 let word = "JavaScript is used ot interact with webpages";
 let check = word.includes("JavaScript");
-console.log(check);
+console.log("Contains 'JavaScript':", check);
 
 //tasks 2
 
 let words = "JavaScript is used to interact with webpages"
-let split = word.split(" ");
-console.log(split);
+let split = words.split(" ");
+console.log("Split into words:", split);
 
 //tasks 3
-let wording = "javascript is use to interact with webpages"
-
-let store =  wording.split(" ")
-console.log(store)
-
-for(let i=0;i<store.length;i++){
-
-    
+function capitalize(str) {
+    return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
 }
+let wording = "javascript is used to interact with webpages"
+console.log("Capitalized:", capitalize(wording)); // JavaScript Is Used To Interact With Webpages
