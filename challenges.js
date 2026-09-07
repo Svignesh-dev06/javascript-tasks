@@ -25,7 +25,7 @@ primeNumber(17);
 function reverseNumber(num) {
     return parseInt(String(num).split('').reverse().join(''));
 }
-console.log("Reverse of 12345:", reverseNumber(12345)); // 54321
+console.log("Reverse of 12345:", reverseNumber(12345));
 
 
 

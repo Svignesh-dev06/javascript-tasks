@@ -42,7 +42,7 @@ function numberCheck() {
 }
 numberCheck();
 
-//Fibonacci series
+
 function fibonacci(n) {
     let fib = [0, 1];
     for (let i = 2; i < n; i++) {
@@ -50,9 +50,8 @@ function fibonacci(n) {
     }
     return fib;
 }
-console.log("Fibonacci series up to 10 numbers:", fibonacci(10)); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+console.log(fibonacci(10));
 
-//Factorial 
 function factorial(num) {
     let result = 1;
     let i = 1;
@@ -62,4 +61,4 @@ function factorial(num) {
     }
     return result;
 }
-console.log("Factorial of 5:", factorial(5)); // 120
+console.log(factorial(5));

@@ -45,19 +45,19 @@ function findPairs(arr, target) {
     }
     return pairs;
 }
-console.log("Pairs summing to 9:", findPairs([1, 3, 5, 6, 8, 2], 9)); // [[3, 6], [1, 8]]
+console.log("Pairs summing to 9:", findPairs([1, 3, 5, 6, 8, 2], 9)); 
 
-// Find the second largest number in an array
+
 function secondLargest(arr) {
     if (arr.length < 2) return null;
     let unique = [...new Set(arr)];
     unique.sort((a, b) => b - a);
     return unique[1];
 }
-console.log("Second largest:", secondLargest([10, 20, 30, 15, 25])); // 25
+console.log("Second largest:", secondLargest([10, 20, 30, 15, 25])); 
 
-// Find all subarrays that sum up to a target number
-function findSubarrays(arr, target) {
+
+function subarray(arr, target) {
     let subarrays = [];
     for (let i = 0; i < arr.length; i++) {
         let sum = 0;
@@ -70,4 +70,4 @@ function findSubarrays(arr, target) {
     }
     return subarrays;
 }
-console.log("Subarrays summing to 12:", findSubarrays([1, 5, 3, 4, 8, 2], 12)); // [[5, 3, 4], [4, 8]]
+console.log(subarray([1, 5, 3, 4, 8, 2], 12)); 

@@ -9,7 +9,7 @@ array.forEach(number => {
 console.log("Sum of elements:", total);
 
 //tasks 2
-function findMissing(arr) {
+function Missingnumber(arr) {
     arr.sort((a, b) => a - b);
     for (let i = 0; i < arr.length - 1; i++) {
         if (arr[i + 1] - arr[i] !== 1) {
@@ -18,7 +18,7 @@ function findMissing(arr) {
     }
     return null;
 }
-console.log("Missing number in [1,2,4,5,6]:", findMissing([1, 2, 4, 5, 6])); // 3
+console.log(Missingnumber([1, 2, 4, 5, 6]));
 
 //tasks 3
 let arr = [3,5,9,7,4,6,8];
